@@ -1,15 +1,9 @@
 package ua.rozhkov;
 
-public class Triangle implements Comparable {
+public class Triangle {
 
     private float a, b, c;
     private String name;
-
-    @Override
-    public int compareTo(Object o) {
-
-        return (int) (this.square() - ((Triangle) o).square());
-    }
 
     @Override
     public String toString() {
@@ -41,8 +35,8 @@ public class Triangle implements Comparable {
 
     public double square() {
 
-        double perimetr = (this.a + this.b + this.c) / 2;
+        double perimeter = (a + b + c) / 2;
 
-        return Math.sqrt(perimetr * (perimetr - this.a) * (perimetr - this.b) * (perimetr - this.c));
+        return Math.sqrt(perimeter * (perimeter - a) * (perimeter - b) * (perimeter - c));
     }
 }

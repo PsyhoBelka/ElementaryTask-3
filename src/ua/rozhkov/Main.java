@@ -30,7 +30,6 @@ public class Main {
             triangle.setC(Float.parseFloat(paramList.get(3)));
             if (triangle.square() <= 0) {
                 System.out.println("Invalid size of triangle sides!");
-                triangle = null;
             } else {
                 triangleList.add(triangle);
             }
